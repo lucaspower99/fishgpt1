@@ -144,3 +144,8 @@ if __name__ == '__main__':
     # app.run(host='0.0.0.0', debug=True)
     
     # Para fins de deployment, o app é iniciado pelo Procfile.
+
+if __name__ == '__main__':
+    # Esta parte só roda se você estiver testando no seu computador (localmente)
+    # No Vercel, o Vercel é quem inicia o app (na linha app.run() padrão)
+    app.run(debug=True)
